@@ -1,0 +1,2 @@
+SELECT count(*) from students s join departments d on 
+s.dept_id=d.dept_id group by dept_name;
