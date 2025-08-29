@@ -1,0 +1,2 @@
+select d.dept_name, avg(s.age) from students s join departments d 
+on s.dept_id=d.dept_id group by d.dept_name;
