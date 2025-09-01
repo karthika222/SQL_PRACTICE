@@ -1,5 +1,14 @@
 # Write your MySQL query statement below
-
+#Method 1
 select e.name as Employee from employee e join employee e1 
 ON e.managerId=e1.id 
 where e.salary>e1.salary;
+
+#Method 2
+select email from person 
+group by email 
+having count(*)>1;
+
+
+
+
