@@ -1,0 +1,7 @@
+SELECT order_id,
+       CASE
+           WHEN order_amount < 100 THEN 'Small'
+           WHEN order_amount BETWEEN 100 AND 500 THEN 'Medium'
+           ELSE 'Large'
+       END AS order_category
+FROM orders;
