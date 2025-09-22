@@ -1,0 +1,7 @@
+SELECT emp_id,
+       CASE
+           WHEN salary < 50000 THEN 'Low'
+           WHEN salary BETWEEN 50000 AND 100000 THEN 'Medium'
+           ELSE 'High'
+       END AS salary_category
+FROM employees;
